@@ -42,7 +42,7 @@ router.post('/register', async (req, res) => {
             res.json({user: user._id});
         });
     } catch(err) {
-        console.log(err);
+        res.json(err);
     }
 });
 
