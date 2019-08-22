@@ -8,7 +8,7 @@ const authRoute = require('./routes/authentification');
 const todoRoute = require('./routes/todos');
 
 // Connect to database
-mongoose.connect('mongodb+srv://Bismarck:123Kleaklea!@cluster0-77xeu.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb+srv://Bismarck:<123Kleaklea!>@cluster0-77xeu.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
     if(err) {
         console.log(err)
     }
