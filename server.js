@@ -35,5 +35,6 @@ app.get('/', (req, res) => {
     res.send('hi');
 })
 
+port = process.env.PORT || 80;
 
-app.listen(5000, () => console.log('App started on port 5000'));
+app.listen(port, () => console.log('App started on port 5000'));
