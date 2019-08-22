@@ -7,8 +7,10 @@ const cors = require('cors');
 const authRoute = require('./routes/authentification');
 const todoRoute = require('./routes/todos');
 
+const password = 'mongodb+srv://Bismarck:database@cluster0-77xeu.mongodb.net/test?retryWrites=true&w=majority';
+
 // Connect to database
-mongoose.connect('mongodb+srv://Bismarck:<123Kleaklea!>@cluster0-77xeu.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect(password, { useNewUrlParser: true }, (err) => {
     if(err) {
         console.log(err)
     }
