@@ -29,6 +29,9 @@ app.use(bodyParser.json());
 app.use('/user', authRoute);
 app.use('/api', todoRoute);
 
+app.get('/', (req, res) => {
+    res.send('hi');
+})
 
 
 app.listen(5000, () => console.log('App started on port 5000'));
